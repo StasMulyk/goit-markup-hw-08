@@ -1,0 +1,72 @@
+.people__section {
+  background-color: var(--portfolio-button-background-color);
+  margin: 0 auto;
+}
+.people__title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
+}
+.people__list {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 36px;
+  }
+}
+
+.people__item {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+      margin-left: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:nth-child(n + 3) {
+      margin-left: 30px;
+    }
+    max-width: 270px;
+  }
+}
+
+.people__info {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+.people__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+  padding-bottom: 10px;
+}
+
+.people__job {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
