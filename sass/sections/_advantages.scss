@@ -1,5 +1,5 @@
 .advantages {
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 .advantages__icon-item {
   height: 120px;
@@ -48,11 +48,12 @@
   color: var(--second-title-color);
   text-transform: uppercase;
   margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-
 .advantages__after-title {
   font-size: 14px;
   line-height: 1.71;

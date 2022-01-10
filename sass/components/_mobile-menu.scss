@@ -3,11 +3,11 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 200vh;
+  min-height: 100vh;
   display: none;
   position: fixed;
-
   padding: 48px calc(100vw / 13);
+  overflow: auto;
   @media screen and (min-width: 480px) {
     padding: 48px 40px;
   }
@@ -100,7 +100,6 @@
 }
 .mobile-menu__wrapp {
   display: flex;
-  justify-content: space-between;
   max-width: 480px;
 }
 .mobile-menu__social {

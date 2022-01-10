@@ -9,11 +9,9 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: baseline;
   }
 }
 .footer__address-container {
@@ -64,15 +62,19 @@
 }
 
 .footer__last-word-title {
-  text-align: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 60px;
   margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .mailing {
@@ -88,15 +90,17 @@
 }
 
 .mailing__title {
-  text-align: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 60px;
   margin-bottom: 20px;
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+    text-align: center;
+  }
 }
 .mailing__input {
   height: 50px;
